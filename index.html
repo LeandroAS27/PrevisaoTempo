@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Previsao do tempo</title>
+    <!--- CSS --->
+    <link rel="stylesheet" type="text/css" href="./styles/style.css" />
+    <!--- Remix Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <span class="background" id="background"></span>
+    <div class="card">
+      <form>
+        <div>
+          <i class="ri-map-pin-line"></i>
+          <label for="Localizacao">Digite a Localizacao:</label>
+          <input type="text" name="Localizacao" id="Localizacao" />
+        </div>
+
+        <button type="submit">
+          <i class="ri-search-line"></i>
+        </button>
+      </form>
+
+      <main>
+        <img src="./assets/icons/clear.png" alt="" id="imagem-tempo" />
+        <!---Tipo do tempo-->
+        <h1 id="temperature">0°C</h1>
+        <h2 id="local">Curitiba</h2>
+      </main>
+
+      <footer>
+        <div class="block">
+          <i class="ri-drop-line"></i>
+
+          <div>
+            <strong id="humidity">60%</strong>
+            <p>Umidade</p>
+          </div>
+        </div>
+        <div class="block">
+          <i class="ri-windy-line"></i>
+
+          <div>
+            <strong id="speed-wind">8 km/h</strong>
+            <p>Vel. do vento</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="/main.js"></script>
+  </body>
+</html>
